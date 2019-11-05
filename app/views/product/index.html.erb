@@ -1,2 +1,11 @@
 <h1>Product#index</h1>
-<p>Find me in app/views/product/index.html.erb</p>
+
+<table>
+<tr><th>Title</th><th>Price</th><th>Quantity</th></tr>
+<tr>
+<% @products.each do |t| %>
+<td><%= t.title %></td>
+<td><%= t.price%></td>
+<td><%= t.stock_quantity%></td>
+</tr>
+<%end%>
